@@ -15,7 +15,16 @@ class TestCalc (unittest.TestCase):
 
         def test_sample3 (self):
                 self.assertEqual (-1, calc('a','b'))
-
         def test_sample4 (self):
                 self.assertEqual (-1, calc(0.1,999))
-
+                                         
+        def test_sample5 (self):
+                self.assertEqual (-1, calc(0,0))
+        def test_sample6 (self):
+                self.assertEqual (1000000, calc(1000,1000))
+        def test_sample7 (self):
+                self.assertEqual (998001, calc(999,999))
+        def test_sample8 (self):
+                self.assertEqual (-1, calc("5",10))
+        def test_sample9 (self):
+                self.assertEqual (-1, calc(1.0,1))
